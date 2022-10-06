@@ -42,7 +42,7 @@ public class Closest {
         Location[][] grid;
         int b = 100;// Used to create the grid size
         grid = new Location[b][b];
-        File f = new File("pointz");
+        File f = new File("points");
 
         try {
             Scanner sk = new Scanner(f);
@@ -52,12 +52,12 @@ public class Closest {
             while (sk.hasNext()) {
                 double x = sk.nextDouble();
                 double y = sk.nextDouble();
-                System.out.println("x next = " + x + " y next = " + y);
+                // System.out.println("x next = " + x + " y next = " + y);
                 int xIndex = (int) Math.floor(x * b);
                 int yIndex = (int) Math.floor(y * b);
                 System.out.println("xIndex = " + xIndex + " yIndex = " + yIndex);
                 Location square = grid[xIndex][yIndex];
-                System.out.println("square = " + square);
+                // System.out.println("square = " + square);
                 // If the square is empty, then we insert the point into it
                 // creating a Linked-List by hasing
                 if (square == null) {
