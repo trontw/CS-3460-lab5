@@ -1,4 +1,7 @@
 /**
+ * Program by: Tim Tron
+ * Program name: StringSet
+ * 
  * This is a string set data structure, that is implemented as a Hash Table.
  * This data structure supports operations insert, find and print - that insert
  * a new
