@@ -17,7 +17,7 @@ public class Closest {
 
     public static void main(String[] args) {
         Location[][] grid;
-        int b = 10;// Used to create the grid size
+        int b = 385;// Used to create the grid size (385 = 5.890s)
         // int x_ndx;
         grid = new Location[b][b];
         // File f = new File("points");
