@@ -69,7 +69,7 @@ public class SpellChecker {
                 counter++;
                 // Search for correct version of modified word
                 if (x.find(word))
-                  System.out.println(word + " is correct.");
+                  System.out.println(word);
               }
             }
             word = temp;

@@ -35,9 +35,10 @@ public class StringSet {
       for (int i = 0; i < new_size; ++i) {
         for (StringNode cur = table[k]; cur != null; cur = cur.getNext()) {
           // Loop through table until the node before null so we can expand
-          // the hash table withour overwriting existing data
+          // the hash table without overwriting existing data
           if (cur.getNext() == null) {
             table[k] = new StringNode(key, table[k]);
+            // table[k] = new StringNode(key, table[k]);//Not sure if should use this or not
           }
         }
       }
